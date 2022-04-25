@@ -126,7 +126,7 @@ window.addEventListener("DOMContentLoaded", async () => {
 				});
 			} else {
 				window.location.href = `http://127.0.0.1:5500/add-products.html?id=${productId}`;
-				setTimeout(() => clientControllers.editarProducto(productId), 2000);
+				setTimeout(clientControllers.editarProducto(productId), 4000);
 			}
 		})
 	);

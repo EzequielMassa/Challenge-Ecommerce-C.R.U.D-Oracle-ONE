@@ -45,7 +45,10 @@ const mostrarProducto = (imagen, nombre, precio, descripcion, id) => {
 	productDiv.innerHTML = contenido;
 	let productImg = document.getElementById("detail__img");
 	if (id.length == 2) {
-		productImg.style.backgroundImage = `url(https://ezequielmassa.github.io/assets/images/${imagen})`;
+		setTimeout(() => {
+			productImg.style.backgroundImage = `url(../assets/images/${imagen})`;
+		}, 1500);
+
 		return productDiv;
 	} else {
 		productImg.style.backgroundImage = `url(${imagen})`;

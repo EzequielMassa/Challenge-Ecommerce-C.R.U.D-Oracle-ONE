@@ -104,7 +104,7 @@ addProductForm.addEventListener("submit", (e) => {
 				icon: "success",
 				button: false,
 			});
-			window.setTimeout(() => (window.location.href = "index.html"), 2000);
+			window.setTimeout(() => (window.location.href = "index.html"), 2500);
 		}
 	}
 });
@@ -159,7 +159,11 @@ const validateAddForm = () => {
 		formValid.nombre = true;
 	}
 
-	if (inputPrecio === "" || inputPrecio <= 0 || (expression.test(inputPrecio) === false)) {
+	if (
+		inputPrecio === "" ||
+		inputPrecio <= 0 ||
+		expression.test(inputPrecio) === false
+	) {
 		errorOutputs[2].textContent =
 			"El campo precio no puede estar vacio ni ser menor a 1";
 	} else {

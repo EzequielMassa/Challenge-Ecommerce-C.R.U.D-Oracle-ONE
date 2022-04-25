@@ -1,0 +1,64 @@
+
+.all__products__img{
+	position: relative;
+	width: 140px;
+height: 174px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+#item1 {
+background-image: url("../../assets/images/starwars1.png");
+}
+#item2 {
+	background-image: url("../../assets/images/starwars2.png");
+}
+#item3 {
+	background-image: url("../../assets/images/starwars3.png");
+}
+#item4 {
+	background-image: url("../../assets/images/starwars4.png");
+}
+#item5 {
+	background-image: url("../../assets/images/starwars5.png");
+}
+#item6 {
+	background-image: url("../../assets/images/starwars6.png");
+}
+#item7 {
+	background-image: url("../../assets/images/consolas1.png");
+}
+#item8 {
+	background-image: url("../../assets/images/consolas2.png");
+}
+#item9 {
+	background-image: url("../../assets/images/consolas3.png");
+}
+#item10 {
+	background-image: url("../../assets/images/consolas4.png");
+}
+#item11 {
+	background-image: url("../../assets/images/consolas5.png");
+}
+#item12 {
+	background-image: url("../../assets/images/consolas6.png");
+}
+#item13 {
+	background-image: url("../../assets/images/diversos1.png");
+}
+#item14 {
+	background-image: url("../../assets/images/diversos2.png");
+}
+#item15 {
+	background-image: url("../../assets/images/diversos3.png");
+}
+#item16 {
+	background-image: url("../../assets/images/diversos4.png");
+}
+#item17 {
+	background-image: url("../../assets/images/diversos5.png");
+}
+#item18 {
+	background-image: url("../../assets/images/diversos6.png");
+}

@@ -1,0 +1,23 @@
+.nav__search__input {
+	font-size: 16px;
+	font-weight: 600;
+	text-align: center;
+}
+
+.nav__search__input::placeholder {
+	color: #2a7ae4;
+	font-size: 14px;
+	font-weight: 600;
+}
+
+/* responsive */
+@media only screen and (min-width: 768px) {
+	.nav__search__input {
+		text-align: left;
+		background-color: #F5F5F5;;
+	}
+
+	.nav__search__input::placeholder {
+		color: #a2a2a2;
+	}
+}

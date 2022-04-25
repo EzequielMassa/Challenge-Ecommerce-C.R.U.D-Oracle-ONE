@@ -1,0 +1,14 @@
+.product__category__input {
+	display: flex;
+	align-items: baseline;
+	gap: 15px;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 19px;
+		color: #2a7ae4;
+	height: 100px;
+}
+
+.input__select__categoria {
+	padding: 10px;
+}

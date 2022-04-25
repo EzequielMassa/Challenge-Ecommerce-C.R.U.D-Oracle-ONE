@@ -1,0 +1,27 @@
+.products__link {
+	color: #2a7ae4;
+	cursor: pointer;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 16px;
+	justify-self: flex-end;
+}
+
+.products__link::after {
+	content: url("../../assets/images/arrow-right.svg");
+	vertical-align: middle;
+	margin-left: 5px;
+}
+
+/* responsive */
+@media only screen and (min-width: 768px) {
+.products__link {
+grid-column: 3/5;
+}
+}
+
+@media only screen and (min-width: 980px) {
+.products__link {
+grid-column: 4/7;
+}
+}

@@ -1,0 +1,15 @@
+.about__contact__form__btn {
+	align-self: flex-start;
+	background: #2a7ae4;
+	color: #fff;
+	width: 133px;
+	height: 40px;
+	margin-bottom: 15px;
+}
+
+.about__contact__form__btn:hover {
+			background: #fff;
+	color: #2a7ae4;
+	cursor: pointer;
+	border: 1px solid #2a7ae4;
+}

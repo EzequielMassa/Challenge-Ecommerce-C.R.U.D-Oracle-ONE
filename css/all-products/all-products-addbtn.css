@@ -1,0 +1,13 @@
+.all__products__addbtn {
+	width: 150px;
+	height: 40px;
+	background: #2a7ae4;
+	color: #fff;
+}
+
+.all__products__addbtn:hover {
+	background: #fff;
+	color: #2a7ae4;
+	cursor: pointer;
+	border: 1px solid #2a7ae4;
+}

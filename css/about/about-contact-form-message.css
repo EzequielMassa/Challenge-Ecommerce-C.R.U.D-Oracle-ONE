@@ -1,0 +1,21 @@
+.about__contact__form__message {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 20px;
+	border-radius: 4px;
+	width: 328px;
+	height: 82px;
+}
+
+.about__contact__form__message::placeholder {
+	color: #a2a2a2;
+	padding-left: 15px;
+	padding-top: 10px;
+}
+
+/* responsive */
+@media only screen and (min-width: 980px) {
+	.about__contact__form__message {
+		width: 80%;
+	}
+}

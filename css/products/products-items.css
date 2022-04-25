@@ -1,0 +1,7 @@
+.products__item {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	width: 156px;
+	margin-bottom: 15px;
+}

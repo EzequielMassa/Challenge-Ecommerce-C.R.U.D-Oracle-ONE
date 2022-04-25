@@ -1,0 +1,20 @@
+.hero__info__description {
+	font-weight: 600;
+	font-size: 14px;
+	padding-left: 15px;
+}
+
+/* responsive */
+@media only screen and (min-width: 768px) {
+.hero__info__description {
+	font-weight: 700;
+font-size: 22px;
+line-height: 26px;
+}
+}
+
+@media only screen and (min-width: 980px) {
+	.hero__info__description {
+	padding-left: 10%;
+}
+}

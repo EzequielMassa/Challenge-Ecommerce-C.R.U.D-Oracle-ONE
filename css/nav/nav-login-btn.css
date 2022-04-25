@@ -1,0 +1,22 @@
+.nav__login__btn {
+	background-color: transparent;
+	border: 1px solid #2a7ae4;
+	color: #2a7ae4;
+	cursor: pointer;
+	font-size: 14px;
+	font-weight: 600;
+	height: 40px;
+	width: 166px;
+}
+
+.nav__login__btn:hover {
+	color: #fff;
+	background: #2a7ae4;
+}
+
+/* responsive */
+@media only screen and (min-width: 768px) {
+	.nav__login__btn {
+		order: 2;
+	}
+}

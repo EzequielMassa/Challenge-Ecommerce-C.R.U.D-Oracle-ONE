@@ -1,0 +1,21 @@
+.hero__info__title {
+	font-size: 22px;
+	padding-top: 50px;
+	padding-left: 15px;
+}
+
+/* responsive */
+@media only screen and (min-width: 768px) {
+	.hero__info__title {
+	font-weight: 700;
+font-size: 52px;
+line-height: 61px;
+	padding-top: 70px;
+}
+}
+
+@media only screen and (min-width: 980px) {
+		.hero__info__title {
+	padding-left: 10%;
+}
+}

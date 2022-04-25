@@ -1,0 +1,20 @@
+.login__form__btn {
+	width: 109px;
+	height: 40px;
+	background: #2a7ae4;
+	color: #fff;
+}
+
+.login__form__btn:hover {
+		background: #fff;
+	color: #2a7ae4;
+	cursor: pointer;
+	border: 1px solid #2a7ae4;
+}
+
+/* responsive */
+@media only screen and (min-width: 980px) {
+	.login__form__btn {
+		width: 100%;
+	}
+}

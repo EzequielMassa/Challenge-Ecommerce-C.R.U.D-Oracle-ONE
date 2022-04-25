@@ -1,0 +1,24 @@
+
+.hero__info__btn {
+	width: 118px;
+	height: 40px;
+	background: #2a7ae4;
+	color: #fff;
+	font-size: 14px;
+	font-weight: 600;
+	cursor: pointer;
+	margin-left: 15px;
+}
+
+.hero__info__btn:hover {
+		background: #fff;
+	color: #2a7ae4;
+	cursor: pointer;
+	border: 1px solid #2a7ae4;
+}
+
+@media only screen and (min-width: 980px) {
+.hero__info__btn {
+	margin-left: 10%;
+}
+}

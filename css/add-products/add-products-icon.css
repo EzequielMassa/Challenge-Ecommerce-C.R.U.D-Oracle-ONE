@@ -1,0 +1,10 @@
+.add__icon {
+	display: block;
+	margin: 10px auto;
+}
+
+@media only screen and (min-width: 768px) {
+.add__icon--desktop {
+height: 32px;
+}
+}

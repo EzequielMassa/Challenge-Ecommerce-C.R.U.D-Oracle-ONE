@@ -1,0 +1,15 @@
+.about {
+	width: 100%;
+	background-color: #eaf2fd;
+	display: flex;
+	flex-direction: column;
+}
+
+/* responsive */
+@media only screen and (min-width: 768px) {
+.about {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-end;
+}
+}

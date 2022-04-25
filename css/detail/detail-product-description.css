@@ -1,0 +1,9 @@
+.detail__product__description {
+	padding: 0 20px;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 16px;
+	color: #464646;
+	text-align: left;
+	margin-bottom: 30px;
+}

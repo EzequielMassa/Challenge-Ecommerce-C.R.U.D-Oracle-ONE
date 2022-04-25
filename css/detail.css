@@ -1,0 +1,19 @@
+.detail__product {
+	display: flex;
+	flex-direction: column;
+	gap: 15px 5px;
+	width: 100%;
+	margin: 0 auto;
+	background-color: #F5F5F5;
+	padding: 3%;
+}
+
+
+/* responsive */
+@media only screen and (min-width: 768px) {
+	.detail__product {
+		display: flex;
+		flex-direction: row;
+		gap: 0px 0px;
+	}
+}

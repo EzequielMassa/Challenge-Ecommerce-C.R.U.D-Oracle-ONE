@@ -1,0 +1,10 @@
+.nav__container {
+	align-items: center;
+	background-color: #fff;
+	display: flex;
+	height: 72px;
+	justify-content: space-around;
+	width: 100%;
+	z-index: 100;
+}
+

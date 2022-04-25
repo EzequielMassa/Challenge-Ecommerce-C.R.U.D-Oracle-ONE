@@ -1,0 +1,25 @@
+.detail__product--img {
+	background-image: url("../../assets/images/starwars1.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 192px;
+}
+
+/* responsive */
+@media only screen and (min-width: 768px) {
+.detail__product--img {
+	width: 100%;
+	max-width: 25%;
+	height: 157px;
+}
+}
+@media only screen and (min-width: 980px) {
+.detail__product--img {
+		background-size: cover
+	background-position: center;
+	max-width: 50%;
+	height: 403px;
+}
+}

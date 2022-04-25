@@ -1,0 +1,11 @@
+.nav__icon__search {
+	color: #464646;
+	width: 24px;
+}
+
+/* responsive */
+@media only screen and (min-width: 768px) {
+	.nav__icon__search {
+display: none;
+}
+}

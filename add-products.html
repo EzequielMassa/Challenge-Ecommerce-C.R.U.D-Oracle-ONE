@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- page icon -->
+		<link
+			rel="shortcut icon"
+			href="assets/images/page-icon.png"
+			type="image/x-icon"
+		/>
+		<!-- fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- css -->
+		<link rel="stylesheet" href="css/general.css" />
+		<link rel="stylesheet" href="css/nav.css" />
+		<link rel="stylesheet" href="css/nav/nav-logo.css" />
+		<link rel="stylesheet" href="css/nav/nav-login-btn.css" />
+		<link rel="stylesheet" href="css/nav/nav-icon-search.css" />
+		<link rel="stylesheet" href="css/nav/nav-search.css" />
+		<link rel="stylesheet" href="css/nav/nav-search-input.css" />
+		<link rel="stylesheet" href="css/nav/nav-search-btn.css" />
+		<link rel="stylesheet" href="css/nav/nav-input-hide.css" />
+		<link rel="stylesheet" href="css/add-products.css" />
+		<link
+			rel="stylesheet"
+			href="css/add-products/add-products-file-desktop.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="css/add-products/add-products-img-desktop.css"
+		/>
+		<link rel="stylesheet" href="css/add-products/add-products-drop.css" />
+		<link
+			rel="stylesheet"
+			href="css/add-products/add-products-text-container.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="css/add-products/add-products-text-desktop.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="css/add-products/add-products-select-input.css"
+		/>
+		<link rel="stylesheet" href="css/add-products/add-products-title.css" />
+		<link rel="stylesheet" href="css/add-products/add-products-form.css" />
+		<link rel="stylesheet" href="css/add-products/add-products-icon.css" />
+		<link rel="stylesheet" href="css/add-products/add-products-img-add.css" />
+		<link rel="stylesheet" href="css/add-products/add-products-text.css" />
+		<link rel="stylesheet" href="css/add-products/add-products-file.css" />
+		<link rel="stylesheet" href="css/add-products/add-products-input.css" />
+		<link
+			rel="stylesheet"
+			href="css/add-products/add-products-description.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="css/add-products/add-products-submit-btn.css"
+		/>
+		<link rel="stylesheet" href="css/about.css" />
+		<link rel="stylesheet" href="css/error-msj.css" />
+		<link rel="stylesheet" href="css/about/about-text.css" />
+		<link rel="stylesheet" href="css/about/about-logo.css" />
+		<link rel="stylesheet" href="css/about/about-link.css" />
+		<link rel="stylesheet" href="css/about/about-contact.css" />
+		<link rel="stylesheet" href="css/about/about-contact-title.css" />
+		<link rel="stylesheet" href="css/about/about-contact-form.css" />
+		<link rel="stylesheet" href="css/about/about-contact-form-name.css" />
+		<link rel="stylesheet" href="css/about/about-contact-form-message.css" />
+		<link rel="stylesheet" href="css/about/about-contact-form-btn.css" />
+		<link rel="stylesheet" href="css/footer.css" />
+
+		<title>Alura Geek E-Commerce</title>
+	</head>
+	<body>
+		<!-- navbar -->
+		<header class="nav__container">
+			<a href="index.html">
+				<img
+					src="assets/images/Logo.svg"
+					alt="alura geek Logo"
+					class="nav__icon__logo"
+				/>
+			</a>
+			<a href="login.html" class="nav__login__btn"
+				><button id="nav-login-btn" class="nav__login__btn"></button></a
+			>
+
+			<div class="nav__search input--hide">
+				<input
+					type="search"
+					name="search"
+					id="search"
+					class="nav__search__input"
+					placeholder="¿Que deseas buscar?"
+				/>
+				<button class="nav__search__btn">
+					<img src="assets/images/search-icon.svg" alt="buscar" />
+				</button>
+			</div>
+			<label for="search"
+				><img
+					src="assets/images/search-icon.svg"
+					alt="icono busqueda"
+					class="nav__icon__search"
+			/></label>
+		</header>
+		<!-- add products -->
+		<main>
+			<article class="add__product">
+				<h1 class="add__product__title">Agregar nuevo producto</h1>
+				<form action="post" id="add__product__form" class="add__product__form">
+					<div class="add__product__file">
+						<label for="img__add" class="add__product_text"
+							><img
+								src="assets/images/addicon.svg"
+								alt="añadir icono"
+								class="add__icon"
+							/>
+							Agregar una imagen para el producto</label
+						>
+
+						<input
+							type="file"
+							name="imagen"
+							id="img__add"
+							class="img__add"
+							accept=".jpg,.png"
+						/>
+					</div>
+					<div class="add__product__file--desktop">
+						<div id="add__product__drop" class="add__product__drop">
+							<img
+								class="add__icon--desktop"
+								src="assets/images/addicon-desktop.svg"
+								alt=""
+							/>
+							<p>Arrastre para agregar una imagen del producto</p>
+						</div>
+						<p class="o__text">O</p>
+						<div class="add__product_text__container">
+							<label for="img__add--desktop" class="add__product_text--desktop"
+								>Busque en su dispositivo</label
+							>
+							<input
+								type="file"
+								name="imagen"
+								id="img__add--desktop"
+								class="img__add--desktop"
+								name="fileinput"
+							/>
+						</div>
+					</div>
+					<span class="addproduct__error--msj"></span>
+					<input
+						type="text"
+						name="nombre"
+						id="add__input__nombre"
+						class="add__product__input"
+						placeholder="Nombre del producto"
+					/>
+					<span class="addproduct__error--msj"></span>
+					<input
+						type="number"
+						name="precio"
+						id="add__input__precio"
+						class="add__product__input"
+						placeholder="Precio del Producto"
+					/>
+					<span class="addproduct__error--msj"></span>
+					<textarea
+						name="descripcion"
+						id="product__description"
+						cols="30"
+						rows="10"
+						placeholder="Descripcion del producto"
+					></textarea>
+					<span class="addproduct__error--msj"></span>
+					<div class="product__category__input">
+						<label for="categoria" class="categoria__label">Categoria</label>
+						<select
+							name="categoria"
+							id="categoria"
+							form="add__product__form"
+							class="input__select__categoria"
+						>
+							<option value="Consolas">Consolas</option>
+							<option value="StarWars">StarWars</option>
+							<option value="Diversos">Diversos</option>
+						</select>
+					</div>
+					<input
+						type="submit"
+						class="add__product__submitbtn"
+						value="Agregar producto"
+					/>
+				</form>
+			</article>
+		</main>
+
+		<!-- form -->
+		<article class="about">
+			<section class="about__text">
+				<img
+					src="assets/images/Logo.svg"
+					alt="alura geek logo"
+					class="about__logo"
+				/>
+				<a href="#" class="about__link">Quienes somos</a>
+				<a href="#" class="about__link">Politica de privacidad</a>
+				<a href="#" class="about__link">Programa de fidelidad</a>
+				<a href="#" class="about__link">Nuestras tiendas</a>
+				<a href="#" class="about__link">Quiero ser franquiciado</a>
+				<a href="#" class="about__link">Anuncie aqui</a>
+			</section>
+			<section class="about__contact">
+				<h2 class="about__contact__title">Hable con nosotros</h2>
+				<form action="" class="about__contact__form" id="contact__form">
+					<input
+						type="text"
+						name="Nombre"
+						placeholder="Ingrese su nombre"
+						class="about__contact__form__name"
+						data-nombre
+					/>
+					<span class="about__error--msj"></span>
+					<textarea
+						name="mensaje"
+						id="message"
+						cols="30"
+						rows="10"
+						placeholder="Escribe tu mensaje"
+						class="about__contact__form__message"
+						data-mensaje
+					></textarea>
+					<span class="about__error--msj"></span>
+					<input
+						type="submit"
+						value="Enviar Mensaje"
+						class="about__contact__form__btn"
+						data-about-form-submit
+					/>
+				</form>
+			</section>
+		</article>
+		<!-- footer -->
+		<footer>
+			<h2 class="footer__text">Desarrollado por Ezequiel Massa 2022</h2>
+		</footer>
+		<script type="module" src="app.js"></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js"
+			integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+		<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+		<script type="module" src="service/add-product-form.js"></script>
+	</body>
+</html>

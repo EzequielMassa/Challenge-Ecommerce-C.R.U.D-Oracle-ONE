@@ -1,0 +1,7 @@
+.nav__icon__logo {
+	max-width: 100px;
+}
+
+.nav__icon__logo:hover {
+	transform: scale(1.1);
+}

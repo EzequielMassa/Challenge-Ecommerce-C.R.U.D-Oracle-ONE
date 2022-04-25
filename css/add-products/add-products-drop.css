@@ -1,0 +1,17 @@
+@media only screen and (min-width: 768px) {
+.add__product__drop{
+display: flex;
+flex-direction: column;
+width: 50%;
+height: 152px;
+background: #fff;
+align-items: center;
+justify-content: center;
+gap: 10px;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+text-align: center;
+border: 2px dashed #c8c8c8;
+}
+}

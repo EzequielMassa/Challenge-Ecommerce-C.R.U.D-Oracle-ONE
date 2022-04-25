@@ -1,0 +1,17 @@
+.detail__product__title {
+	padding: 0 20px;
+	font-weight: 500;
+	font-size: 22px;
+	line-height: 26px;
+	color: #464646;
+}
+
+
+@media only screen and (min-width: 980px) {
+.detail__product__title {
+font-weight: 500;
+font-size: 52px;
+line-height: 61px;
+}
+
+}

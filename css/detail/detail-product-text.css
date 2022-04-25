@@ -1,0 +1,16 @@
+.detail__product__text {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+
+@media only screen and (min-width: 980px) {
+.detail__product__text {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 10px;
+	width: 100%;
+}
+}

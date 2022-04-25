@@ -1,0 +1,5 @@
+.error--msj, .about__error--msj, .addproduct__error--msj {
+	color: red;
+	text-transform: uppercase;
+	font-weight: 700;
+}

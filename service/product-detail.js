@@ -45,10 +45,7 @@ const mostrarProducto = (imagen, nombre, precio, descripcion, id) => {
 	productDiv.innerHTML = contenido;
 	let productImg = document.getElementById("detail__img");
 	if (id.length < 3) {
-		setTimeout(() => {
-			productImg.style.backgroundImage = `url(../assets/images/${imagen})`;
-		}, 2000);
-
+		productImg.style.backgroundImage = `url(./assets/images/${imagen})`;
 		return productDiv;
 	} else {
 		productImg.style.backgroundImage = `url(${imagen})`;

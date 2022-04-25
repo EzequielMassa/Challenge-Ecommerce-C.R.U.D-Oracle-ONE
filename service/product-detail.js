@@ -1,43 +1,38 @@
 import { clientServices } from "./client-service.js";
 
-window.addEventListener("DOMContentLoaded",async () => {
+window.addEventListener("DOMContentLoaded", async () => {
 	const url = new URL(window.location);
 	const productId = url.searchParams.get("id");
-	let  index = 0;
+	let index = 0;
 
-  const searchIndex = await clientServices
+	const searchIndex = await clientServices
 		.obtenerProductos()
-		.then((data) =>
-			index += (data.findIndex((item) => item.id == productId))
-		);
-	
+		.then((data) => (index += data.findIndex((item) => item.id == productId)));
 
-   const imagen = await clientServices
-			.obtenerProductos()
-			.then((data) => data[index].imagen);
-
-	 const nombre =	await clientServices
+	const imagen = await clientServices
 		.obtenerProductos()
-		.then((data) => data[index].nombre)
-	
-  const precio = await clientServices
+		.then((data) => data[index].imagen);
+
+	const nombre = await clientServices
+		.obtenerProductos()
+		.then((data) => data[index].nombre);
+
+	const precio = await clientServices
 		.obtenerProductos()
 		.then((data) => data[index].precio);
 
-  const descripcion = await clientServices
+	const descripcion = await clientServices
 		.obtenerProductos()
 		.then((data) => data[index].descripcion);
 
-		const id = await clientServices
-			.obtenerProductos()
-			.then((data) => data[index].id);
+	const id = await clientServices
+		.obtenerProductos()
+		.then((data) => data[index].id);
 
-	
-	
-		mostrarProducto(imagen, nombre, precio, descripcion,id); 
+	mostrarProducto(imagen, nombre, precio, descripcion, id);
 });
 
-const mostrarProducto = (imagen, nombre, precio, descripcion,id) => {
+const mostrarProducto = (imagen, nombre, precio, descripcion, id) => {
 	const productDiv = document.getElementById("detail__product");
 
 	const contenido = ` <div id="detail__img" class="detail__product--img"></div>
@@ -49,11 +44,10 @@ const mostrarProducto = (imagen, nombre, precio, descripcion,id) => {
 
 	productDiv.innerHTML = contenido;
 	let productImg = document.getElementById("detail__img");
-	if (id.length == 2){
-		productImg.style.backgroundImage = `url(assets/images/${imagen})`;
+	if (id.length == 2) {
+		productImg.style.backgroundImage = `url(https://ezequielmassa.github.io/assets/images/${imagen})`;
 		return productDiv;
-	}else{
-			productImg.style.backgroundImage = `url(${imagen})`;
+	} else {
+		productImg.style.backgroundImage = `url(${imagen})`;
 	}
-
 };

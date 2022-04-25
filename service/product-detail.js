@@ -50,7 +50,7 @@ const mostrarProducto = (imagen, nombre, precio, descripcion,id) => {
 	productDiv.innerHTML = contenido;
 	let productImg = document.getElementById("detail__img");
 	if (id.length == 2){
-		productImg.style.backgroundImage = `url(../assets/images/${imagen})`;
+		productImg.style.backgroundImage = `url(../../assets/images/${imagen})`;
 		return productDiv;
 	}else{
 			productImg.style.backgroundImage = `url(${imagen})`;

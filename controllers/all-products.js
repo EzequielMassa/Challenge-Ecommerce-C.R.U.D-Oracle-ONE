@@ -98,7 +98,7 @@ window.addEventListener("DOMContentLoaded", async () => {
 							button: false,
 						});
 						clientControllers.eliminarProducto(productId);
-						window.setTimeout(() => window.location.reload(), 2000)
+						window.setTimeout(() => window.location.reload(), 2000);
 					} else {
 						swal("Tu producto no se elimino");
 					}
@@ -126,7 +126,7 @@ window.addEventListener("DOMContentLoaded", async () => {
 				});
 			} else {
 				window.location.href = `http://127.0.0.1:5500/add-products.html?id=${productId}`;
-				clientControllers.editarProducto(productId);
+				setTimeout(() => clientControllers.editarProducto(productId), 2000);
 			}
 		})
 	);

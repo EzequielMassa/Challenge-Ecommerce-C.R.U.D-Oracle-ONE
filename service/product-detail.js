@@ -44,10 +44,10 @@ const mostrarProducto = (imagen, nombre, precio, descripcion, id) => {
 
 	productDiv.innerHTML = contenido;
 	let productImg = document.getElementById("detail__img");
-	if (id.length == 2) {
+	if (id.length < 3) {
 		setTimeout(() => {
 			productImg.style.backgroundImage = `url(../assets/images/${imagen})`;
-		}, 1500);
+		}, 2000);
 
 		return productDiv;
 	} else {

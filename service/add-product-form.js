@@ -151,9 +151,9 @@ const validateAddForm = () => {
 			"El campo nombre no puede estar vacio ni superar los 20 caracteres";
 	} else {
 		if (editProduct[0]) {
-			editProduct[0].nombre = inputNombre;
+			editProduct[0].nombre = inputNombre.trim();
 		} else {
-			product.nombre = inputNombre;
+			product.nombre = inputNombre.trim();
 		}
 
 		formValid.nombre = true;

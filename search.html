@@ -18,7 +18,7 @@
 			rel="stylesheet"
 		/>
 
-	<!-- icons -->
+		<!-- icons -->
 		<script src="https://kit.fontawesome.com/8824e79a3c.js" crossorigin="anonymous"></script>
 
 		<!-- css -->
@@ -53,6 +53,7 @@
 			href="css/all-products/all-products-item-price.css"
 		/>
 		<link rel="stylesheet" href="css/all-products/all-products-item-id.css" />
+			<link rel="stylesheet" href="css/products/products-detail.css" />
 
 		<link rel="stylesheet" href="css/about.css" />
 		<link rel="stylesheet" href="css/error-msj.css" />
@@ -66,7 +67,7 @@
 		<link rel="stylesheet" href="css/about/about-contact-form-message.css" />
 		<link rel="stylesheet" href="css/about/about-contact-form-btn.css" />
 		<link rel="stylesheet" href="css/footer.css" />
-		<link rel="stylesheet" href="css/footer/footer-text.css" />
+			<link rel="stylesheet" href="css/footer/footer-text.css" />
 		<link rel="stylesheet" href="css/footer/footer-icons.css" />
 
 		<title>Alura Geek E-Commerce</title>
@@ -81,9 +82,9 @@
 					class="nav__icon__logo"
 				/>
 			</a>
-			<a  href="login.html" class="nav__login__btn"
-				><button id="nav-login-btn" class="nav__login__btn"></button></a
-			>
+			<a href="login.html" class="nav__login__btn"
+				><button id="nav-login-btn" class="nav__login__btn"></button
+			></a>
 
 			<div class="nav__search input--hide">
 				<input
@@ -94,7 +95,11 @@
 					placeholder="¿Que deseas buscar?"
 				/>
 				<button class="nav__search__btn">
-					<img id="search__icon" src="assets/images/search-icon.svg" alt="buscar" />
+					<img
+						id="search__icon"
+						src="assets/images/search-icon.svg"
+						alt="buscar"
+					/>
 				</button>
 			</div>
 			<label for="search"
@@ -108,12 +113,10 @@
 		<main>
 			<section class="all__products">
 				<div class="all__products__info">
-					<h1 id="title" class="all__products__title"></h1>
-					<a id="add-product-btn" class="hide" href="add-products.html"
-						><button class="all__products__addbtn">Agregar producto</button></a
-					>
+					<h1 id="title" class="all__products__title">Resultados de la Busqueda</h1>
+			
 				</div>
-				<div id="all__products__items" class="all__products__items"></div>
+				<div id="all__search__items" class="all__products__items"></div>
 			</section>
 		</main>
 
@@ -174,6 +177,6 @@
 		</footer>
 		<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 		<script type="module" src="app.js"></script>
-		<script type="module" src="controllers/all-products.js"></script>
+		<script type="module" src="controllers/search-results.js"></script>
 	</body>
 </html>

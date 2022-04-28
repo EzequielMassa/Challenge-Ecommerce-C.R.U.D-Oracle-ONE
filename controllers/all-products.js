@@ -114,7 +114,7 @@ window.addEventListener("DOMContentLoaded", async () => {
 		})
 	);
 
-	editIcons.forEach((icon) =>
+editIcons.forEach((icon) =>
 		icon.addEventListener("click", async (e) => {
 			const productId = e.target.parentElement.id;
 			if (productId.length < 6) {
@@ -130,4 +130,7 @@ window.addEventListener("DOMContentLoaded", async () => {
 			}
 		})
 	);
+	
 });
+
+

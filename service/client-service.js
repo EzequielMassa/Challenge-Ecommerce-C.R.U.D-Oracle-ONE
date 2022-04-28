@@ -7,9 +7,9 @@ const obtenerProductos = () => {
 };
 
 const obtenerCertificados = () => {
-	return fetch(
-		"https://orac-e-commerce-project.herokuapp.com/perfil"
-	).then((res) => res.json());
+	return fetch("https://orac-e-commerce-project.herokuapp.com/perfil").then(
+		(res) => res.json()
+	);
 };
 
 const viewAllProd = document.querySelectorAll(".allPrdBtn");
@@ -49,8 +49,23 @@ loginBtn.addEventListener("click", () => {
 	sessionStorage.clear();
 });
 
+const searchBtn = document.getElementById("search__icon");
+const inputSearch = document.getElementById("search");
+
+inputSearch.addEventListener("keypress", (e) => {
+	if (e.key === "Enter") {
+		searchBtn.click()
+	}
+});
+
+searchBtn.addEventListener("click", (e) => {
+	let inputSearchValue = inputSearch.value;
+	window.location.href = `search.html?results=${inputSearchValue}`;
+});
+
 export const clientServices = {
 	loginBtn,
+	searchBtn,
 	obtenerProductos,
 	obtenerCertificados,
 	viewAllProd,

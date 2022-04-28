@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-			<!-- page icon -->
+		<!-- page icon -->
 		<link
 			rel="shortcut icon"
 			href="assets/images/page-icon.png"
@@ -17,6 +17,10 @@
 			href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap"
 			rel="stylesheet"
 		/>
+
+	<!-- icons -->
+		<script src="https://kit.fontawesome.com/8824e79a3c.js" crossorigin="anonymous"></script>
+
 		<!-- css -->
 		<link rel="stylesheet" href="css/general.css" />
 		<link rel="stylesheet" href="css/nav.css" />
@@ -33,7 +37,7 @@
 		<link rel="stylesheet" href="css/detail/detail-product-title.css" />
 		<link rel="stylesheet" href="css/detail/detail-product-price.css" />
 		<link rel="stylesheet" href="css/detail/detail-product-description.css" />
-			<link rel="stylesheet" href="css/products.css" />
+		<link rel="stylesheet" href="css/products.css" />
 		<link rel="stylesheet" href="css/products/products-category.css" />
 		<link rel="stylesheet" href="css/products/products-title.css" />
 		<link rel="stylesheet" href="css/products/products-link.css" />
@@ -45,7 +49,7 @@
 		<link rel="stylesheet" href="css/detail/products-title-similar.css" />
 
 		<link rel="stylesheet" href="css/about.css" />
-			<link rel="stylesheet" href="css/error-msj.css" />
+		<link rel="stylesheet" href="css/error-msj.css" />
 		<link rel="stylesheet" href="css/about/about-text.css" />
 		<link rel="stylesheet" href="css/about/about-logo.css" />
 		<link rel="stylesheet" href="css/about/about-link.css" />
@@ -56,12 +60,14 @@
 		<link rel="stylesheet" href="css/about/about-contact-form-message.css" />
 		<link rel="stylesheet" href="css/about/about-contact-form-btn.css" />
 		<link rel="stylesheet" href="css/footer.css" />
+			<link rel="stylesheet" href="css/footer/footer-text.css" />
+		<link rel="stylesheet" href="css/footer/footer-icons.css" />
 
 		<title>Alura Geek E-Commerce</title>
 	</head>
 	<body>
 		<!-- navbar -->
-	<header class="nav__container">
+		<header class="nav__container">
 			<a href="index.html">
 				<img
 					src="assets/images/Logo.svg"
@@ -69,7 +75,9 @@
 					class="nav__icon__logo"
 				/>
 			</a>
-			<a href="login.html" class="nav__login__btn"><button id="nav-login-btn" class="nav__login__btn"></button></a>
+			<a href="login.html" class="nav__login__btn"
+				><button id="nav-login-btn" class="nav__login__btn"></button
+			></a>
 
 			<div class="nav__search input--hide">
 				<input
@@ -80,7 +88,11 @@
 					placeholder="¿Que deseas buscar?"
 				/>
 				<button class="nav__search__btn">
-					<img src="assets/images/search-icon.svg" alt="buscar" />
+					<img
+						id="search__icon"
+						src="assets/images/search-icon.svg"
+						alt="buscar"
+					/>
 				</button>
 			</div>
 			<label for="search"
@@ -93,77 +105,20 @@
 
 		<!-- product detail -->
 		<section class="detail">
-			<div id="detail__product" class="detail__product">
-	
+			<div id="detail__product" class="detail__product"></div>
+		</section>
+
+		<!-- similar products -->
+		<section class="products">
+			<div
+				id="similarReference"
+				class="product__category product__category--detail"
+			>
+				<h3 class="products__title products__title--similar">
+					Productos similares
+				</h3>
 			</div>
 		</section>
-     
-    <!-- similar products -->
-		<section class="products">
-				<div class="product__category product__category--detail">
-					<h3 class="products__title products__title--similar">Productos similares</h3>
-					<div class="products__item">
-						<img
-							src="assets/images/consolas1.png"
-							alt="product image"
-							class="products__img"
-						/>
-						<h5 class="products__name">Control XYZ</h5>
-						<h4 class="products__price">$ 60,00</h4>
-						<a id="c1" href="#" class="products__detail">Ver producto</a>
-					</div>
-					<div class="products__item">
-						<img
-							src="assets/images/starwars2.png"
-							alt="product image"
-							class="products__img"
-						/>
-						<h5 class="products__name">Producto XYZ</h5>
-						<h4 class="products__price">$ 60,00</h4>
-						<a id="s2" href="#" class="products__detail">Ver producto</a>
-					</div>
-					<div class="products__item">
-						<img
-							src="assets/images/starwars3.png"
-							alt="product image"
-							class="products__img"
-						/>
-						<h5 class="products__name">Producto XYZ</h5>
-						<h4 class="products__price">$ 60,00</h4>
-						<a id="s3" href="#" class="products__detail">Ver producto</a>
-					</div>
-					<div class="products__item">
-						<img
-							src="assets/images/starwars4.png"
-							alt="product image"
-							class="products__img"
-						/>
-						<h5 class="products__name">Producto XYZ</h5>
-						<h4 class="products__price">$ 60,00</h4>
-						<a id="s4" href="#" class="products__detail">Ver producto</a>
-					</div>
-					<div class="products__item">
-						<img
-							src="assets/images/starwars5.png"
-							alt="product image"
-							class="products__img"
-						/>
-						<h5 class="products__name">Producto XYZ</h5>
-						<h4 class="products__price">$ 60,00</h4>
-						<a id="s5" href="#" class="products__detail">Ver producto</a>
-					</div>
-					<div class="products__item">
-						<img
-							src="assets/images/starwars6.png"
-							alt="product image"
-							class="products__img"
-						/>
-						<h5 class="products__name">Producto XYZ</h5>
-						<h4 class="products__price">$ 60,00</h4>
-						<a id="s6" href="#" class="products__detail">Ver producto</a>
-					 </div>
-					</section>
-
 
 		<!-- form -->
 		<article class="about">
@@ -212,7 +167,13 @@
 		</article>
 		<!-- footer -->
 		<footer>
-			<h2 class="footer__text">Desarrollado por Ezequiel Massa 2022</h2>
+			<h2 class="footer__text">Desarrollado por Ezequiel Massa &#169 2022</h2>
+			<div class="footer__icons">
+				<a  href="https://github.com/EzequielMassa" target="blank"><i class="fa-brands fa-github"></i></a>
+				<a href="https://www.linkedin.com/in/ezequiel-massa-dev/" target="blank"><i class="fa-brands fa-linkedin"></i></a>
+				<a  href="https://ezequielmassa.github.io/Portfolio-Oracle-ONE/" target="blank"><i class="fa-solid fa-address-card"></i></a>
+			</div>
+
 		</footer>
 		<script type="module" src="app.js"></script>
 		<script type="module" src="service/product-detail.js"></script>

@@ -19,6 +19,11 @@
 			href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap"
 			rel="stylesheet"
 		/>
+
+		<!-- icons -->
+		<script src="https://kit.fontawesome.com/8824e79a3c.js" crossorigin="anonymous"></script>
+
+		
 		<!-- css -->
 		<link rel="stylesheet" href="css/general.css" />
 		<link rel="stylesheet" href="css/nav.css" />
@@ -54,6 +59,8 @@
 		<link rel="stylesheet" href="css/about/about-contact-form-message.css" />
 		<link rel="stylesheet" href="css/about/about-contact-form-btn.css" />
 		<link rel="stylesheet" href="css/footer.css" />
+		<link rel="stylesheet" href="css/footer/footer-text.css" />
+		<link rel="stylesheet" href="css/footer/footer-icons.css" />
 
 		<title>Alura Geek E-Commerce</title>
 	</head>
@@ -80,7 +87,7 @@
 					placeholder="¿Que deseas buscar?"
 				/>
 				<button class="nav__search__btn">
-					<img src="assets/images/search-icon.svg" alt="buscar" />
+					<img id="search__icon" src="assets/images/search-icon.svg" alt="buscar" />
 				</button>
 			</div>
 			<label for="search"
@@ -352,7 +359,13 @@
 		</article>
 		<!-- footer -->
 		<footer>
-			<h2 class="footer__text">Desarrollado por Ezequiel Massa 2022</h2>
+			<h2 class="footer__text">Desarrollado por Ezequiel Massa &#169 2022</h2>
+			<div class="footer__icons">
+				<a  href="https://github.com/EzequielMassa" target="blank"><i class="fa-brands fa-github"></i></a>
+				<a href="https://www.linkedin.com/in/ezequiel-massa-dev/" target="blank"><i class="fa-brands fa-linkedin"></i></a>
+				<a  href="https://ezequielmassa.github.io/Portfolio-Oracle-ONE/" target="blank"><i class="fa-solid fa-address-card"></i></a>
+			</div>
+
 		</footer>
 		<script type="module" src="app.js"></script>
 		<script type="module" src="service/index-products.js"></script>

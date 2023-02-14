@@ -1,5 +1,3 @@
-import { clientServices } from "../service/client-service.js";
-import { user } from "../app.js";
 
 const SEARCHBTN = document.querySelector(".nav__icon__search");
 
@@ -20,7 +18,7 @@ productBtnCategory.forEach((btn) => {
 
 	const eliminarProducto = (id) => {
 		return fetch(
-			`https://orac-e-commerce-project.herokuapp.com/productos/${[id]}`,
+			`https://midnight-east-daughter.glitch.me/productos/${[id]}`,
 			{
 				method: "DELETE",
 				headers: {

@@ -1,13 +1,12 @@
-import { user } from "../app.js";
 
 const obtenerProductos = () => {
-	return fetch("https://orac-e-commerce-project.herokuapp.com/productos").then(
+	return fetch("https://midnight-east-daughter.glitch.me/productos").then(
 		(res) => res.json()
 	);
 };
 
 const obtenerCertificados = () => {
-	return fetch("https://orac-e-commerce-project.herokuapp.com/perfil").then(
+	return fetch("https://midnight-east-daughter.glitch.me/perfil").then(
 		(res) => res.json()
 	);
 };

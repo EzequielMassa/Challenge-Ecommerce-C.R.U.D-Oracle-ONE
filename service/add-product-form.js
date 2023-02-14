@@ -1,4 +1,3 @@
-import { clientControllers } from "../controllers/client-controllers.js";
 import { clientServices } from "./client-service.js";
 
 const url = new URL(window.location);
@@ -191,7 +190,7 @@ const validateAddForm = () => {
 };
 
 const enviarDatos = async () => {
-	return fetch("https://orac-e-commerce-project.herokuapp.com/productos", {
+	return fetch("https://midnight-east-daughter.glitch.me/productos", {
 		method: "POST",
 		headers: {
 			"Content-Type": "application/json",
@@ -234,7 +233,7 @@ if (url.searchParams.get("id")) {
 
 function actualizarProducto(nombre, precio, descripcion, imagen, categoria) {
 	return fetch(
-		`https://orac-e-commerce-project.herokuapp.com/productos/${productId}`,
+		`https://midnight-east-daughter.glitch.me/productos/${productId}`,
 		{
 			method: "PUT",
 			headers: {
